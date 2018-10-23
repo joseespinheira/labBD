@@ -1,0 +1,11 @@
+<a href="/pessoa">pessoa</a>
+<a href="/curso">curso</a>
+<a href="/projeto">projeto</a>
+<a href="/aluno">aluno</a>
+<a href="/professor">professor</a>
+<a href="/disciplina">disciplina</a>
+<a href="/turma"><strike>turma</strike></a>
+<a href="/ministra">ministra</a>
+<a href="/monitora"><strike>monitora</strike></a>
+<a href="/aluno_-turma"><strike>aluno-turma</strike></a>
+<a href="/prova"><strike>prova</strike></a>
