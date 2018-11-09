@@ -21,7 +21,7 @@ CREATE TABLE `alunos` (
   KEY `FK` (`id_curso`,`matricula_pessoa`)
 );
 
-INSERT INTO `alunos` VALUES ('0','0','0'),
+INSERT INTO `alunos`  (matricula_aluno,id_curso,matricula_pessoa)  VALUES ('0','0','0'),
 ('300435209','0','876437'),
 ('8224','1','1'),
 ('95994','1','876769'),
