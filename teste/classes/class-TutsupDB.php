@@ -10,7 +10,7 @@ class TutsupDB
 	/** DB properties */
 	public $host      = 'localhost', // Host da base de dados 
 	       $db_name   = 'tutsup',    // Nome do banco de dados
-	       $password  = '',          // Senha do usuário da base de dados
+	       $password  = 'root',          // Senha do usuário da base de dados
 	       $user      = 'root',      // Usuário da base de dados
 	       $charset   = 'utf8',      // Charset da base de dados
 	       $pdo       = null,        // Nossa conexão com o BD

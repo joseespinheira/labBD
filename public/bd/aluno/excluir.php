@@ -1,4 +1,3 @@
-
 <?php
 require "../conexao.php"; 
 
@@ -8,5 +7,4 @@ include("Cliente-Class.php");
 
 $cliente = new Cliente();
 $cliente->removecliente($id,$mysqllink);
-
 ?>

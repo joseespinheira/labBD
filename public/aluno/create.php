@@ -24,7 +24,7 @@
                         <form method="POST" action="{{ url('/pessoa') }}" accept-charset="UTF-8" class="form-horizontal" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
-                            @include ('pessoa.form', ['formMode' => 'create'])
+                            <?= include ('form.php'); ?>
 
                         </form>
 

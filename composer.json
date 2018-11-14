@@ -1,13 +1,7 @@
 {
-    "name": "Lab DB",
-    "description": "Breve descrição do que a aplicação se propoe a fazer",
-    "authors": [
-        {
-            "name": "José Espinheira",
-            "email": "joseespinheira@gmail.com"
-        }
-    ],
+	"name": "my/app",
     "require": {
-        "php": ">=7.1"
+        "phreeze/phreeze": "dev-master",
+		"zendframework/zendframework": "^3.0"
     }
 }

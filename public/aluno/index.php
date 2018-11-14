@@ -17,7 +17,7 @@
                 <div class="card">
                     <div class="card-header">Pessoa</div>
                     <div class="card-body">
-                        <a href="{{ url('/pessoa/create') }}" class="btn btn-success btn-sm" title="Add New Pessoa">
+                        <a href="/aluno/create.php" class="btn btn-success btn-sm" title="Add New Pessoa">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
         
