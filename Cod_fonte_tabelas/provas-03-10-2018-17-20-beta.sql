@@ -1,16 +1,5 @@
-DROP TABLE IF EXISTS `provas`;
-CREATE TABLE `provas` (
-  `id_disciplina` int(11) DEFAULT NULL,
-  `id_curso` int(11) DEFAULT NULL,
-  `ano_semestre` varchar(6) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `matricula_aluno` int(11) DEFAULT NULL,
-  `descricao` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `nota` decimal(10,0) DEFAULT NULL,
-  PRIMARY KEY (`descricao`),
-  KEY `PK,FK` (`id_disciplina`,`id_curso`,`ano_semestre`,`matricula_aluno`)
-);
 
-INSERT INTO `provas` (`id_disciplina`,`id_curso`,`ano_semestre`,`matricula_aluno`,`descricao`,`nota`) VALUES ('16','16','2018.1','16','Prova 1','227'),
+INSERT INTO provas (id_disciplina,id_curso,ano_semestre,matricula_aluno,descricao,nota) VALUES ('16','16','2018.1','16','Prova 1','227'),
 ('97','97','2013.2','97','Prova 10','822'),
 ('0','0','2010.1','0','Prova 11','97'),
 ('9','9','2014.2','9','Prova 12','923'),

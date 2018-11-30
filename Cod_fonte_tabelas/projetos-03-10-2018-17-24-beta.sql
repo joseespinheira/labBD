@@ -1,12 +1,5 @@
-DROP TABLE IF EXISTS `projetos`;
-CREATE TABLE `projetos` (
-  `id_projeto` int(11) NOT NULL,
-  `titulo` varchar(30) DEFAULT NULL,
-  `conceito` varchar(7) DEFAULT NULL,
-  PRIMARY KEY (`id_projeto`)
-);
 
-INSERT INTO `projetos` VALUES ('0','Projeto Festa Junina','RUIM'),
+INSERT INTO projeto VALUES ('0','Projeto Festa Junina','RUIM'),
 ('1','Projeto Valorização das Difere','BOM'),
 ('2','Projeto Família na Escola','RUIM'),
 ('3','Projeto Leitura permanente na ','RUIM'),
@@ -10006,15 +9999,3 @@ INSERT INTO `projetos` VALUES ('0','Projeto Festa Junina','RUIM'),
 ('998228704','Projeto Civismo se aprende na ','RUIM'),
 ('998432149','Projeto Leitura permanente na ','BOM'),
 ('998713308','Projeto Civismo se aprende na ','BOM'); 
-
-
-
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-

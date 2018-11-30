@@ -1,28 +1,5 @@
--- Generation time: Wed, 03 Oct 2018 17:07:17 +0000
--- Host: mysql.hostinger.ro
--- DB name: u574849695_24
-/*!40030 SET NAMES UTF8 */;
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-DROP TABLE IF EXISTS `disciplina`;
-CREATE TABLE `disciplina` (
-  `id_disciplina` int(11) NOT NULL,
-  `nome` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `ementa` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `matricula_professor` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_disciplina`),
-  KEY `FK` (`matricula_professor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-INSERT INTO `disciplina` (`id_disciplina`,`nome`,`ementa`,`matricula_professor`) VALUES ('0','Demografia etc','Estudo dos processos neuropsicológicos subjacentes ao desempenho e à aprendizagem intelectual na vel','53'),
+INSERT INTO disciplina (id_disciplina,nome,ementa,matricula_professor) VALUES ('0','Demografia etc','Estudo dos processos neuropsicológicos subjacentes ao desempenho e à aprendizagem intelectual na vel','53'),
 ('1',' Bilaterais e Multilaterais etc','Estudo dos processos neuropsicológicos subjacentes ao desempenho e à aprendizagem intelectual na vel','78'),
 ('2','História antiga e História medieval','Os objetivos são desenvolver e aprimorar os conceitos fundamentais em Gerontologia numa abordagem mu','40'),
 ('3','Grupo de Álgebra não comutativa','Estudo dos processos neuropsicológicos subjacentes ao desempenho e à aprendizagem intelectual na vel','13'),
@@ -10022,15 +9999,3 @@ INSERT INTO `disciplina` VALUES ('4332939','Direito Internacional Privado etc','
 ('996608980','Demografia etc','Estudo dos fundamentos da ética no atendimento em saúde e na pesquisa com idosos.','83047'),
 ('997456791','Teoria geral e processos estocásticos','Estudo dos processos neuropsicológicos subjacentes ao desempenho e à aprendizagem intelectual na vel','310'),
 ('997817411','Ver também: Ciências da Saúde','Estudo dos fundamentos da ética no atendimento em saúde e na pesquisa com idosos.','9774'); 
-
-
-
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-

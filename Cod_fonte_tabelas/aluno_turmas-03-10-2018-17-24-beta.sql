@@ -1,29 +1,5 @@
--- Generation time: Wed, 03 Oct 2018 17:24:57 +0000
--- Host: mysql.hostinger.ro
--- DB name: u574849695_24
-/*!40030 SET NAMES UTF8 */;
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-DROP TABLE IF EXISTS `aluno_turmas`;
-CREATE TABLE `aluno_turmas` (
-  `id_disciplina` int(11) DEFAULT NULL,
-  `id_curso` int(11) DEFAULT NULL,
-  `ano_semestre` varchar(6) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `matricula_aluno` int(11) DEFAULT NULL,
-  `id_projeto` int(11) DEFAULT NULL,
-  KEY `PK,FK` (`id_disciplina`,`id_curso`,`ano_semestre`,`matricula_aluno`),
-  KEY `FK` (`id_projeto`)
-);
-
-INSERT INTO `aluno_turmas` (`id_disciplina`,`id_curso`,`ano_semestre`,`matricula_aluno`,`id_projeto`) VALUES ('0','0','2010.1','0','0'),
+INSERT INTO aluno_turmas (id_disciplina,id_curso,ano_semestre,matricula_aluno,id_projeto) VALUES ('0','0','2010.1','0','0'),
 ('1','1','2010.2','1','1'),
 ('2','2','2011.1','2','2'),
 ('3','3','2011.2','3','3'),
@@ -20023,15 +19999,3 @@ INSERT INTO `aluno_turma` VALUES ('87547659','89430484','2018.2','20438','900799
 ('996608980','997543886','2018.2','81487','998228704'),
 ('997456791','998756321','2010.1','81496','998432149'),
 ('997817411','998841768','2010.2','81534','998713308'); 
-
-
-
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
