@@ -1,5 +1,6 @@
 
 <?php
+
 /** @package    C9 */
 
 /* GlobalConfig object contains all configuration information for the app */

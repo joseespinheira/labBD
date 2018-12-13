@@ -1,19 +1,24 @@
-@extends('layouts.app')
+<head>
+    <title>Criar aluno</title>
+</head>
+<!-- importando o cabeçario geral -->
+<?php 
+    include "../layout/header.html";
+    require '../bd/conexao.php';
+    $dados = mysqli_query($mysqllink,"SELECT * FROM alunos GROUP BY matricula_aluno");
+    $linha = mysqli_fetch_assoc($dados);
+    $total = mysqli_num_rows($dados);
+?>
 
-@section('content')
-    <div class="container">
-        <div class="row">
-            @include('admin.sidebar')
-
-            <div class="col-md-9">
                 <div class="card">
+
                     <div class="card-header">Create New Pessoa</div>
                     <div class="card-body">
-                        <a href="{{ url('/pessoa') }}" title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
+                        <a href="index.php " title="Back"><button class="btn btn-warning btn-sm"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back</button></a>
                         <br />
                         <br />
 
-                        @if ($errors->any())
+                    <?    if ( $errors->any() )     ?>
                             <ul class="alert alert-danger">
                                 @foreach ($errors->all() as $error)
                                     <li>{{ $error }}</li>
