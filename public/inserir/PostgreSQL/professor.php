@@ -6,7 +6,7 @@
    $con = pg_connect("host=localhost port=5432 dbname=c9 user=postgres password=postgres");
    
    echo "tete";
-   $conn = pg_connect("port=5432 dbname=c9 user=ubuntu password=rooot");
+   $conn = pg_connect("port=5432 dbname=c9 user=ubuntu password=root");
    //phpinfo();
    If ($conn)
    {
@@ -6037,7 +6037,7 @@
       }
       else{
          echo "não foi";
-      }
+      }}
        /**}
            Fecha a conexão com o PostgreSQL
        */

@@ -1,6 +1,6 @@
 
 <head>
-    <title>Criar aluno</title>
+    <title>Aluno</title>
 </head>
 
 <!-- importando o cabeçario geral -->
@@ -15,9 +15,9 @@
 ?>
 
                 <div class="card">
-                    <div class="card-header">Pessoa</div>
+                    <div class="card-header">Aluno</div>
                     <div class="card-body">
-                        <a href="/aluno/create.php" class="btn btn-success btn-sm" title="Add New Pessoa">
+                        <a href="/aluno/create.php" class="btn btn-success btn-sm" title="Add New Aluno">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
         
